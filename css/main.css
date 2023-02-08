@@ -1,0 +1,116 @@
+.experiencia {
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+    font-weight: 900;
+    color: #e7e7e7;
+}
+
+.informações {
+    font-size: 1.5rem;
+    max-width: 40ch;
+}
+
+.projeto {
+    background-color: #f2f5f5;
+    border-radius: 4px;
+    margin: 2rem 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    position: relative;
+    padding: 2rem;
+}
+
+@media (width <= 1250px) {
+    .projeto {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media (width <= 1100px) {
+    .projeto {
+        grid-template-columns: 1fr;
+    }
+    .cargo {
+        grid-row: 3;
+    }
+}
+
+@media (width <= 1000px) {
+    .projeto {
+        grid-template-columns: 1fr;
+    }
+    .cargo {
+        grid-row: 3;
+    }
+}
+
+.projeto:hover {
+    transition: 0.3s;
+    background-color: black;
+}
+
+.projeto:hover p,
+.projeto:hover h3 {
+    color: white;
+}
+
+.projeto:hover .ano {
+    color: black;
+}
+
+.projeto h3 {
+    font-size: 1.5rem;
+}
+
+.projeto p {
+    font-size: 1.4rem;
+}
+
+.ano {
+    position: absolute;
+    left: -7ch;
+    top: 1.75rem;
+}
+
+.projeto::before {
+    position: absolute;
+    content: "";
+    left: -0.5rem;
+    top: 1.75rem;
+    width: 0.5rem;
+    height: 3ch;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(37, 105, 233),
+        cornflowerblue
+    );
+}
+
+.projeto ul {
+    place-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.projeto ul li a {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 6ch;
+    text-align: center;
+}
+
+.projeto ul li a:hover {
+    transition: 0.1s;
+    background-color: rgb(20, 20, 20);
+    outline: 3px solid cornflowerblue;
+    color: white;
+}
