@@ -1,6 +1,6 @@
 main {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: minmax(200px, 350px) 1fr;
     gap: 9rem;
 }
 
@@ -34,7 +34,7 @@ img {
     padding: 2rem 0px;
 }
 
-@media (width <= 850px) {
+@media (width <= 750px) {
     body {
         margin: 0px 1rem;
     }
