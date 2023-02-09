@@ -1,11 +1,20 @@
+.background-cinzinha {
+  background-color: #141414;
+  width: 100%;
+}
+
 .formação {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 9rem;
   background-color: #141414;
   max-width: 1200px;
+  margin: 10rem auto;
+}
 
-  margin: auto;
+.formação-container {
+  display: grid;
+  gap: 2.5rem;
 }
 
 .formação h2 {
@@ -16,6 +25,25 @@
   text-transform: uppercase;
 }
 
-.background-cinzinha {
-  background-color: #141414;
+.formação div p {
+  font-size: 1.5rem;
+}
+
+.formação-descrição {
+  color: #a3a3a3;
+  max-width: 40ch;
+}
+
+.grade-ensino {
+  display: grid;
+  padding: 20px;
+  background-image: linear-gradient(to right, rgb(48, 47, 47), 60%, #141414);
+  max-width: 10rem;
+  border-radius: 6px;
+}
+
+.formação-item p,
+.formação-item h3,
+.formação strong {
+  color: white;
 }
