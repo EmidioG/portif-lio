@@ -1,0 +1,21 @@
+.formação {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 9rem;
+  background-color: #141414;
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.formação h2 {
+  font-size: 8rem;
+  line-height: 1;
+  word-wrap: break-word;
+  max-width: 4ch;
+  text-transform: uppercase;
+}
+
+.background-cinzinha {
+  background-color: #141414;
+}

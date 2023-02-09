@@ -1,129 +1,131 @@
 .experiencia {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 9rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 9rem;
+  max-width: 1200px;
+  margin: auto;
 }
 .experiencia h2 {
-    font-size: 8rem;
-    line-height: 1;
-    text-transform: uppercase;
-    word-break: break-all;
-    max-width: 4ch;
-    font-weight: 900;
-    color: #e7e7e7;
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+  font-weight: 900;
+  color: #e7e7e7;
 }
 
 .informações {
-    font-size: 1.5rem;
-    max-width: 40ch;
+  font-size: 1.5rem;
+  max-width: 40ch;
 }
 
 .projeto {
-    background-color: #f2f5f5;
-    border-radius: 4px;
-    margin: 2rem 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem 2rem;
-    position: relative;
-    padding: 2rem;
+  background-color: #f2f5f5;
+  border-radius: 4px;
+  margin: 2rem 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  position: relative;
+  padding: 2rem;
 }
 
 @media (width <= 1050px) {
-    .projeto {
-        grid-template-columns: 1fr;
-    }
-    .cargo {
-        grid-row: 3;
-    }
+  .projeto {
+    grid-template-columns: 1fr;
+  }
+  .cargo {
+    grid-row: 3;
+  }
 }
 
 .projeto:hover {
-    transition: 0.3s;
-    background-color: black;
+  transition: 0.3s;
+  background-color: black;
 }
 
 .projeto:hover p,
 .projeto:hover h3 {
-    color: white;
+  color: white;
 }
 
 .projeto:hover .ano {
-    color: black;
+  color: black;
 }
 
 .projeto h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .projeto p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .ano {
-    position: absolute;
-    left: -7ch;
-    top: 1.75rem;
+  position: absolute;
+  left: -7ch;
+  top: 1.75rem;
 }
 
 .projeto::before {
-    position: absolute;
-    content: "";
-    left: -0.5rem;
-    top: 1.75rem;
-    width: 0.5rem;
-    height: 3ch;
-    background-image: linear-gradient(
-        to bottom,
-        rgb(37, 105, 233),
-        cornflowerblue
-    );
+  position: absolute;
+  content: "";
+  left: -0.5rem;
+  top: 1.75rem;
+  width: 0.5rem;
+  height: 3ch;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(37, 105, 233),
+    cornflowerblue
+  );
 }
 
 .projeto ul {
-    place-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  place-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .projeto ul li a {
-    display: inline-block;
-    font-size: 1.4rem;
-    padding: 1rem 1.5rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 4px;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
 }
 
 .projeto ul li a:hover {
-    transition: 0.1s;
-    background-color: rgb(20, 20, 20);
-    outline: 3px solid cornflowerblue;
-    color: white;
+  transition: 0.1s;
+  background-color: rgb(20, 20, 20);
+  outline: 3px solid cornflowerblue;
+  color: white;
 }
 
 @media (width <= 750px) {
-    .experiencia {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    .experiencia h2 {
-        font-size: 2rem;
-        color: black;
-        word-break: normal;
-    }
-    .projeto {
-        margin-top: 4rem;
-    }
-    .projeto::before {
-        left: 0px;
-        top: -1rem;
-        width: 8.5ch;
-        height: 1ch;
-    }
-    .ano {
-        position: absolute;
-        left: 0px;
-        top: -3rem;
-    }
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .experiencia h2 {
+    font-size: 2rem;
+    color: black;
+    word-break: normal;
+  }
+  .projeto {
+    margin-top: 4rem;
+  }
+  .projeto::before {
+    left: 0px;
+    top: -1rem;
+    width: 8.5ch;
+    height: 1ch;
+  }
+  .ano {
+    position: absolute;
+    left: 0px;
+    top: -3rem;
+  }
 }

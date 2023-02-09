@@ -1,48 +1,60 @@
 header {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-content: space-between;
+  max-width: 1200px;
 }
+
+@media (width >= 1317px) {
+  header {
+    width: 1200px;
+    margin: auto;
+  }
+}
+
+header div {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header h1 {
-    font-size: 4rem;
-    padding: 1.5rem 0px;
+  font-size: 4rem;
+  padding: 1.5rem 0px;
 }
 
 .header-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .header-menu li {
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    border-radius: 6px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 6px;
 }
 
 .header-menu li:hover a {
-    color: rgb(148, 148, 148);
+  color: rgb(148, 148, 148);
 }
 
 @media (width <= 850px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .header-menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .header-menu li {
-        background-color: rgb(250, 250, 250);
-        width: 10ch;
-        text-align: center;
-    }
+  .header-menu li {
+    background-color: rgb(250, 250, 250);
+    width: 10ch;
+    text-align: center;
+  }
 }
