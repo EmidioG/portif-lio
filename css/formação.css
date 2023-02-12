@@ -1,6 +1,6 @@
 .background-cinzinha {
   background-color: #141414;
-  width: 100%;
+  padding: 1rem;
 }
 
 .formação {
@@ -9,7 +9,7 @@
   gap: 9rem;
   background-color: #141414;
   max-width: 1200px;
-  margin: 10rem auto;
+  margin: 2rem auto;
 }
 
 .formação-container {
@@ -17,7 +17,7 @@
   gap: 2.5rem;
 }
 
-.formação h2 {
+.subtitulo {
   font-size: 8rem;
   line-height: 1;
   word-wrap: break-word;
@@ -49,15 +49,79 @@
   gap: 1rem;
 }
 
-.formação-item p,
-.formação-item h3,
-.formação strong {
+.texto-branco {
   color: white;
+}
+
+.formação-item {
+  display: grid;
+  gap: 1rem;
+}
+
+.extras {
+  color: #8f8f8f;
+  margin-bottom: 10px;
 }
 
 .cursos,
 .idiomas {
+  position: relative;
+}
+
+.cursos::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/cursos.svg) no-repeat center;
+  top: -5px;
+  left: -40px;
+}
+
+.idiomas::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/idiomas.svg) no-repeat center;
+  top: -5px;
+  left: -40px;
+}
+
+.cursos-específicos {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
+  grid-template-columns: auto auto;
+  gap: 1rem 2rem;
+}
+
+span {
+  display: inline-block;
+  color: #8f8f8f;
+  font-size: 1.3rem;
+}
+
+@media (width <= 1316px) {
+  .formação {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (width <= 1200px) {
+  .subtitulo {
+    font-size: 2rem;
+    word-wrap: normal;
+    color: white;
+    text-transform: uppercase;
+    width: auto;
+  }
+
+  .formação {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .subtitulo::after {
+    content: ":";
+    padding: 0 0.25rem;
+  }
 }

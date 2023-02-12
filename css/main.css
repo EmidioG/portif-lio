@@ -3,7 +3,7 @@
   grid-template-columns: auto auto;
   gap: 9rem;
   max-width: 1200px;
-  margin: auto;
+  margin: 40px auto;
 }
 .experiencia h2 {
   font-size: 8rem;
@@ -29,6 +29,13 @@
   gap: 1rem 2rem;
   position: relative;
   padding: 2rem;
+}
+
+@media (width <= 1316px) {
+  .experiencia {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 }
 
 @media (width <= 1050px) {

@@ -1,25 +1,22 @@
-main {
+.principal {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 9rem;
   max-width: 1200px;
-  margin: auto;
+  margin: 40px auto;
 }
 
-img {
-  max-width: 100%;
-}
-.principal {
+.principal-informações {
   align-self: center;
 }
 
-.principal h1 {
+.principal-descrição {
   font-size: 4rem;
   max-width: 11ch;
   position: relative;
 }
 
-.principal h1::before {
+.principal-descrição::before {
   position: absolute;
   content: "";
   width: 100px;
@@ -31,45 +28,49 @@ img {
   z-index: -1;
 }
 
-.principal p {
+.localidade {
   font-size: 1.5rem;
   padding: 2rem 0px;
 }
 
-@media (width <= 750px) {
-  body {
-    margin: 0px 1rem;
-  }
-  main {
-    grid-template-columns: 40% 1fr;
-    gap: 3rem;
-  }
-  .principal h1 {
-    font-size: 3rem;
-  }
-
-  .principal h1::before {
-    width: 100px;
-    height: 100px;
-    top: -30px;
-    left: -30px;
+@media (width <= 1316px) {
+  .principal {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 
-@media (width <= 750px) {
-  .principal h1 {
+@media (width <= 850px) {
+  .principal-descrição {
     font-size: 2rem;
   }
-  .principal h1::before {
+  .principal-descrição::before {
     width: 35px;
     height: 12.5px;
     top: -10px;
     left: 1.5px;
   }
 }
+@media (width <= 750px) {
+  .principal {
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+  }
+}
 
-@media (width <= 430px) {
-  .principal p {
-    max-width: 18ch;
+@media (width <= 570px) {
+  .principal {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+  }
+
+  .imagem-decorativa {
+    display: none;
+  }
+  .principal-informações {
+    margin: 0 auto;
+  }
+  .localidade {
+    text-align: center;
   }
 }

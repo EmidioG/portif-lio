@@ -11,28 +11,27 @@
 
 <body>
     <header class="header">
-        <div>
-            <h1><strong>Emiliozao</strong></h1>
-
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="#">Experiencia</a></li>
-                    <li><a href="#">Formação</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1 class="header-titulo"><strong>Emiliozao</strong></h1>
+        <nav>
+            <ul class="header-menu">
+                <li><a href="#">Experiencia</a></li>
+                <li><a href="#">Formação</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <img src="img/perfil.jpg" alt="Emiliozao" />
-        <div class="principal">
-            <h1>
+    <!--* principal -->
+    <main class="principal">
+        <img class="imagem-decorativa" src="img/perfil.jpg" alt="Emiliozao" />
+        <div class="principal-informações">
+            <h1 class="principal-descrição">
                 Desenvolvedor<strong> Front End </strong>em processo de aprendizagem...
             </h1>
-            <p>Localizado em <strong>Maceió-AL</strong></p>
+            <p class="localidade">Localizado em <strong>Maceió-AL</strong></p>
         </div>
     </main>
+
     <section class="experiencia">
         <h2>Experiência</h2>
 
@@ -71,36 +70,38 @@
                     </li>
                 </ul>
             </div>
+
+
     </section>
     <section class="background-cinzinha">
         <div class="formação">
-            <h2>Formação</h2>
+            <h2 class="subtitulo">Formação</h2>
             <div class="formação-container">
-                <p class="formação-descrição">
+                <p class="formação-descrição texto-branco">
                     Atualmente cursando o curso <strong> técnico </strong>integrado em <strong> Informática para internet. </strong> com foco em css, Javascript/react e node-js. 😎
                 </p>
                 <section class="escolas-grade">
                     <div class="formação-item grade-ensino">
-                        <p><strong>Técnico</strong></p>
-                        <h3>Informática para internet</h3>
-                        <p>IFAL</p>
+                        <p class="texto-branco"><strong>Técnico</strong></p>
+                        <h3 class="texto-branco">Informática para internet</h3>
+                        <p class="texto-branco">IFAL</p>
                     </div>
                 </section>
                 <div class="cursos">
-                    <img src="img/cursos.svg" alt="" />
                     <div class="formação-item">
-                        <h3>cursos intensivos</h3>
-                        <p>HTML e CSS iniciante</p>
-                        <p>PHP upinside</p>
-                        <p>jQuery Origamid</p>
+                        <h3 class="extras">cursos intensivos</h3>
+                        <div class="cursos-específicos">
+                            <p class="texto-branco">HTML e CSS iniciante </p><span>/60hrs</span>
+                            <p class="texto-branco">PHP upinside</p> <span>/60hrs</span>
+                            <p class="texto-branco">jQuery Origamid </p><span>/60hrs</span>
+                        </div>
                     </div>
                 </div>
                 <div class="idiomas">
-                    <img src="img/idiomas.svg" alt="" />
                     <div class="formação-item">
-                        <h3>idiomas</h3>
-                        <p><strong>potugues</strong> nativo</p>
-                        <p><strong>inglês</strong> basico</p>
+                        <h3 class="extras">idiomas</h3>
+                        <p class="texto-branco"><strong>Potuguês:</strong> <span>nativo</span></p>
+                        <p class="texto-branco"><strong>Inglês:</strong> <span>basico</span></p>
                     </div>
                 </div>
             </div>
@@ -108,17 +109,17 @@
     </section>
     </main>
 
-    <footer>
-        <article class="contato">
-            <p>
-                Atualmente estou em processo de estágio... mas se quiser
-                trocar uma ideia comigo😶‍🌫️
-            </p>
-            <h1 class="email">emidiog510@gmail.com</h1>
-            <h1 class="number">+55 82 9 9629-4829</h1>
-            <h1 class="instagram">@emiliozao</h1>
-        </article>
-        <p>emiliozao direitos reservados.</p>
+    <footer class="rodape">
+        <div class="rodape-container">
+            <p class="situação-atual texto-branco">Atualmente estou em processo de estágio... mas se quiser
+                trocar uma ideia comigo😶‍🌫️</p>
+            <article class="contato">
+                <h1 class="email texto-branco">emidiog510@gmail.com</h1>
+                <h1 class="number texto-branco">+55 82 9 9629-4829</h1>
+                <h1 class="instagram texto-branco">@emiliozao</h1>
+            </article>
+            <p class="copyright texto-branco">emiliozao direitos reservados.</p>
+        </div>
     </footer>
 </body>
 

@@ -17,7 +17,6 @@ li,
 nav,
 div,
 article,
-section,
 ul {
   margin: 0px;
   text-decoration: none;
@@ -26,14 +25,9 @@ ul {
   padding: 0px;
 }
 body {
-  display: grid;
-  gap: 5rem;
-  margin: auto;
   font-family: "Fira Sans", sans-serif;
 }
 
-@media (width <= 1316px) {
-  body {
-    margin: 0px 5rem;
-  }
+img {
+  max-width: 100%;
 }
